@@ -1,0 +1,8 @@
+.idea
+target
+
+# exclude generated class if they are copied into the project
+src/main/java/com/solubris/typedtuples/api
+src/main/java/com/solubris/typedtuples/immutable
+src/main/java/com/solubris/typedtuples/mutable
+src/main/java/com/solubris/typedtuples/accumulator
