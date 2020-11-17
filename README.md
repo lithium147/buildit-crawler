@@ -18,7 +18,7 @@ The site could use javascript to render links on the fly.  This will not be pick
 ## results
 
 The max pages found under https://wiprodigital.com/ is 283.
-This was found used a max depth of 8.  Any larger depth doesn't increase the number of pages.
+This was found using a max depth of 8.  Any larger depth doesn't increase the number of pages.
 
 ## tests
 

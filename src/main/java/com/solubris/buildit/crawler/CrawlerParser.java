@@ -38,10 +38,6 @@ public class CrawlerParser {
         result = new HashSet<>();
         for (Element link : subUrls) {
             String linkHref = link.attr("href");
-//            if(linkHref.contains("increasing-org-resilience")) {
-//                System.out.println("bad");
-//
-//            }
 
             if (linkHref == null || linkHref.length() == 0) {   // there is no href attribute on the <a ...>
                 continue;

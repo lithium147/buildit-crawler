@@ -1,5 +1,6 @@
 .idea
 target
+buildit-crawler.iml
 
 # exclude generated class if they are copied into the project
 src/main/java/com/solubris/typedtuples/api

@@ -17,13 +17,10 @@ public class Crawler {
         this.url = url;
     }
 
-    public void run() throws InterruptedException {
-        // create CrawlerTask which is instigator for all other tasks
+    public void run() {
         ForkJoinTask<Void> crawlerTask = new CrawlerTask(url, results, maxDepth);
         forkJoinPool.invoke(crawlerTask);
         forkJoinPool.awaitQuiescence(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
-//        forkJoinPool.shutdown();
-//        forkJoinPool.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
     }
 
     public void report() {
